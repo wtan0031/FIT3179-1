@@ -5,7 +5,7 @@
     "layer": [
       {
         "data": {
-          "url": "vancouver.json",
+          "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week9/js/vancouver.json",
           "format": {
             "type": "topojson",
             "feature": "local-area-boundary"
@@ -22,7 +22,7 @@
       },
       {
         "data": {
-          "url": "data/2019_crime_records.csv"
+          "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week9/data/2019_crime_records.csv"
         },
         "projection": {
           "type": "equalEarth"
