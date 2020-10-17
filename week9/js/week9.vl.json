@@ -5,14 +5,14 @@
     "layer": [
       {
         "data": {
-          "url": "data/us-10m.json",
+          "url": "vancouver.json",
           "format": {
             "type": "topojson",
-            "feature": "states"
+            "feature": "local-area-boundary"
           }
         },
         "projection": {
-          "type": "albersUsa"
+          "type": "equalEarth"
         },
         "mark": {
           "type": "geoshape",
@@ -22,19 +22,19 @@
       },
       {
         "data": {
-          "url": "data/airports.csv"
+          "url": "data/2019_crime_records.csv"
         },
         "projection": {
-          "type": "albersUsa"
+          "type": "equalEarth"
         },
         "mark": "circle",
         "encoding": {
           "longitude": {
-            "field": "longitude",
+            "field": "X",
             "type": "quantitative"
           },
           "latitude": {
-            "field": "latitude",
+            "field": "Y",
             "type": "quantitative"
           },
           "size": {"value": 10},
