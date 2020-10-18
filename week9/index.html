@@ -18,14 +18,14 @@
   <body>
     <h1>Dot Map (1 dot = 1 crime record)</h1>
     <!-- Container for the visualization -->
-    <div id="dotMap"></div>
+    <div id="choropleth"></div>
 
     <script>
       // Assign the specification to a local variable vlSpec.
-      var vlSpec = "week9.vl.json";
+      var vlSpec = "js/choropleth.json";
 
       // Embed the visualization in the container with id `vis`
-      vegaEmbed('#dotMap', vlSpec).then(function(result) {
+      vegaEmbed('#choropleth', vlSpec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
     </script>
