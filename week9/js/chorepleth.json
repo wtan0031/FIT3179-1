@@ -1,43 +1,47 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title": "The percentage of \"Break And Enter Commercial\" crime in each region of Vancouver (2019)",
-    "width": 800,
-    "height": 600,
-    "data": {
-      "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week9/js/vancouver.json",
-      "format": {
-            "type": "topojson",
-            "feature": "local-area-boundary"
-          }
-    },
-    "transform": [{
-        "lookup": "properties.name",
-        "from": {
-          "data": {
-            "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week9/data/percentage_2019.csv"
-          },
-          "key": "NEIGHBOURHOOD",
-          "fields": ["TYPE", "NEIGHBOURHOOD"]
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "The percentage of \"Break And Enter Commercial\" crime in each region of Vancouver (2019)",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week9/js/vancouver.json",
+    "format": {
+          "type": "topojson",
+          "feature": "local-area-boundary"
         }
-      },
-      {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
-    ],
-    "projection": {
-      "type": "equirectangular"
+  },
+  "transform": [{
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week9/data/BaEC_crime_2019.csv"
+        },
+        "key": "NEIGHBOURHOOD",
+        "fields": ["TYPE", "NEIGHBOURHOOD"]
+      }
     },
-    "mark": {
-      "type": "geoshape"
-      },
-    "encoding": {
-      "color": {
-        "field": "Active Cases",
-        "type": "quantitative",
-        "scale": {"type": "log"}
-      },
-      "tooltip": [
-        {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-        {"field": "Active", "type": "quantitative"}
-      ]
-    }
-  
+    {"aggregate": [{
+      "op": "count",
+      "as": "frequency"
+    }],
+    "groupby": ["NEIGHBOURHOOD"]}
+  ],
+  "projection": {
+    "type": "equirectangular"
+  },
+  "mark": {
+    "type": "geoshape"
+    },
+  "encoding": {
+    "color": {
+      "field": "frequency",
+      "type": "quantitative",
+      "scale": {"type": "log"}
+    },
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Region"},
+      {"field": "frequency", "type": "quantitative"}
+    ]
   }
+
+}
