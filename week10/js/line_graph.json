@@ -1,0 +1,6 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title": "The number of crimes per year in Vancouver",
+    "width": 800,
+    "height": 600
+}
