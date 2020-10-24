@@ -11,7 +11,14 @@
       "point": true
     },
     "encoding": {
-      "x": {"timeUnit": "year", "field": "year"},
-      "y": {"field": "count", "type": "quantitative"}
+      "x": {
+        "timeUnit": "year", 
+        "field": "year"
+      },
+      "y": {
+        "field": "count", 
+        "type": "quantitative",
+        "axis": {"tickCount": 7}
+      }
     }
 }
