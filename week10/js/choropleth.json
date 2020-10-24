@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "The percentage of \"Break And Enter Commercial\" crime in each neighbourhood of Vancouver (2019)",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week9/js/vancouver.json",
+    "format": {
+          "type": "topojson",
+          "feature": "local-area-boundary"
+        }
+  },
+  "transform": [{
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week9/data/percentage_BaEC_2019.csv"
+        },
+        "key": "Neighbourhood",
+        "fields": ["Percentage"]
+      }
+    }
+  ],
+  "projection": {
+    "type": "equirectangular"
+  },
+  "mark": {
+    "type": "geoshape"
+    },
+  "encoding": {
+    "color": {
+      "field": "Percentage",
+      "type": "quantitative",
+      "scale": {"type": "log"}
+    },
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Neighbourhood"},
+      {"field": "Percentage", "type": "quantitative"}
+    ]
+  }
+
+}
