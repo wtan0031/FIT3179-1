@@ -1,6 +1,18 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title": "The number of crimes per year in Vancouver",
+    "description": "The number of crimes per year in Vancouver",
     "width": 800,
-    "height": 600
-}
+    "height": 600,
+    "data": {
+        "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week10/data/crime_count_peryear.csv"
+    },
+    "mark": {
+      "type": "line",
+      "point": true
+    },
+    "encoding": {
+      "x": {"timeUnit": "year", "field": "year"},
+      "y": {"aggregate":"mean", "field": "price", "type": "quantitative"},
+      "color": {"field": "symbol", "type": "nominal"}
+    }
+  }
