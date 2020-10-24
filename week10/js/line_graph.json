@@ -18,7 +18,9 @@
       "y": {
         "field": "count", 
         "type": "quantitative",
-        "axis": {"tickCount": 7}
+        "axis": {
+          "tickCount": 5 
+        }
       }
     }
 }
