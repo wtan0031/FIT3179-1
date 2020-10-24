@@ -20,7 +20,8 @@
         "type": "quantitative",
         "axis": {
           "tickCount": 5 
-        }
+        },
+        "scale": {"domain": [15000, 40000]}
       }
     }
 }
