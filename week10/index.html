@@ -20,24 +20,24 @@
 
     <!-- Container for the visualization -->
     <h2>The First Visualisation</h2>
-    <div id="chorepleth"></div>
+    <div id="choropleth"></div>
 
     <h2>The Second Visualisation</h2>
-    <!-- <div id="line_graph"></div> -->
+    <div id="line_graph"></div>
 
     <script>
       // Assign the specification to a local variables
-      var vis1 = "js/chorepleth.json";
+      var vis1 = "../week9/js/choropleth.json";
 
-      vegaEmbed('#chorepleth', vis1).then(function(result) {
+      vegaEmbed('#choropleth', vis1).then(function(result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
       }).catch(console.error);
 
-      // var vis2 = "js/line_graph.json";
+      var vis2 = "js/line_graph.json";
 
-      // vegaEmbed('#line_graph', vis2).then(function(result) {
-      //   // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-      // }).catch(console.error);
+      vegaEmbed('#line_graph', vis2).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
 
     </script>
   </body>
