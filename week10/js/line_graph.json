@@ -1,27 +1,107 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title": "The number of crimes per year in Vancouver",
-    "width": 800,
-    "height": 600,
-    "data": {
-        "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week10/data/crime_count_peryear.csv"
-    },
-    "mark": {
-      "type": "line",
-      "point": true
-    },
-    "encoding": {
-      "x": {
-        "timeUnit": "year", 
-        "field": "year"
-      },
-      "y": {
-        "field": "count", 
-        "type": "quantitative",
-        "axis": {
-          "tickCount": 5 
-        },
-        "scale": {"domain": [15000, 40000]}
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "The number of crimes per year in Vancouver",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/week10/data/crime_count_peryear.csv"
+  },
+  "params": [
+    {
+      "name": "year_above",
+      "value": 2003,
+      "bind": {
+        "input": "range",
+        "min": 2003,
+        "max": 2019,
+        "step": 1,
+        "name": "Minimum Year: "
       }
     }
+  ],
+  "transform": [
+    {"filter": "year(datum.year) >= year_above"}
+  ],
+  "layer": [
+    {
+      "mark":{"type": "line", "point": true},
+      "encoding": {
+        "x": {
+          "timeUnit": "year", 
+          "field": "year",
+          "axis": {
+            "domain": false,
+            "tickCount": 10,
+            "gridOpacity": 0,
+            "title": "year"
+          }
+        },
+        "y": {
+          "field": "count", 
+          "type": "quantitative", 
+          "axis": {
+            "domain": false, 
+            "tickCount": 10,
+            "gridOpacity": 0.5
+          },
+          "scale": {"domain": [18000, 36000]}
+        },
+        "tooltip": [
+          {"field": "year", "type": "temporal", "format": "%Y"},
+          {"field": "count", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark":{
+        "type": "text",
+        "align": "left",
+        "baseline":"line-bottom",
+        "dx": 10,
+        "dy": 20,
+        "fontSize": 11.5
+      },
+      "data": {
+        "values": [
+          {
+            "year": "2005",
+            "count": 32414,
+            "event": "A new transit police force was establised with full police powers"
+          },
+          {
+            "year": "2006",
+            "count": 28890,
+            "event": "A new Counter Terrorism Unit was formed"
+          },
+          {
+            "year": "2011",
+            "count": 18718,
+            "event": "2011 Stanley Cup Finals Riot took place"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "timeUnit": "year"
+        },
+        "y": {
+          "field": "count",
+          "type":"quantitative"
+        }
+        ,
+        "text": {
+          "field": "event",
+          "type": "nominal"
+        },
+        "color": { 
+          "condition": {
+            "test": "year(datum.year) < 2011",
+            "value": "blue"
+          },
+          "value": "red"
+        }
+      }
+    }
+  ]
 }
