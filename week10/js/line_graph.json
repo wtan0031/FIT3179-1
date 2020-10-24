@@ -100,6 +100,13 @@
             "value": "blue"
           },
           "value": "red"
+        },
+        "opacity": {
+          "condition" : {
+            "test": "year(datum.year) >= year_above",
+            "value": 1
+          },
+          "value": 0
         }
       }
     }
