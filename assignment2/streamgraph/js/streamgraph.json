@@ -2,19 +2,20 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "width": 300, 
     "height": 200,
-    "data": {"url": "data/unemployment-across-industries.json"},
+    "data": {"url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/assignment2/streamgraph/data/number_of_crimes.csv"},
     "mark": "area",
     "encoding": {
         "x": {
-        "timeUnit": "yearmonth", "field": "date",
+        "timeUnit": "year", "field": "year",
         "axis": {"domain": false, "format": "%Y", "tickSize": 0}
         },
         "y": {
-        "aggregate": "sum", "field": "count",
+        "field": "count",
+        "aggregate":"sum",
         "axis": null,
         "stack": "center"
         },
-        "color": {"field":"series", "scale":{"scheme": "category20b"}}
+        "color": {"field":"neighbourhood", "scale":{"scheme": "category20b"}}
     }
 }
   
