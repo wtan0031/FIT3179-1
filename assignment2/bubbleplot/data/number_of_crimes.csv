@@ -1,0 +1,358 @@
+neighbourhood,year,count
+Arbutus-Ridge,2003,616
+Arbutus-Ridge,2004,649
+Arbutus-Ridge,2005,619
+Arbutus-Ridge,2006,441
+Arbutus-Ridge,2007,361
+Arbutus-Ridge,2008,335
+Arbutus-Ridge,2009,380
+Arbutus-Ridge,2010,322
+Arbutus-Ridge,2011,302
+Arbutus-Ridge,2012,338
+Arbutus-Ridge,2013,300
+Arbutus-Ridge,2014,407
+Arbutus-Ridge,2015,363
+Arbutus-Ridge,2016,434
+Arbutus-Ridge,2017,378
+Arbutus-Ridge,2018,311
+Arbutus-Ridge,2019,263
+Dunbar-Southlands,2003,773
+Dunbar-Southlands,2004,949
+Dunbar-Southlands,2005,720
+Dunbar-Southlands,2006,544
+Dunbar-Southlands,2007,434
+Dunbar-Southlands,2008,367
+Dunbar-Southlands,2009,402
+Dunbar-Southlands,2010,416
+Dunbar-Southlands,2011,522
+Dunbar-Southlands,2012,554
+Dunbar-Southlands,2013,392
+Dunbar-Southlands,2014,476
+Dunbar-Southlands,2015,560
+Dunbar-Southlands,2016,423
+Dunbar-Southlands,2017,457
+Dunbar-Southlands,2018,474
+Dunbar-Southlands,2019,329
+Fairview,2003,3476
+Fairview,2004,3076
+Fairview,2005,3091
+Fairview,2006,2608
+Fairview,2007,2372
+Fairview,2008,2072
+Fairview,2009,2069
+Fairview,2010,1741
+Fairview,2011,1477
+Fairview,2012,1771
+Fairview,2013,1610
+Fairview,2014,2037
+Fairview,2015,1990
+Fairview,2016,1936
+Fairview,2017,1775
+Fairview,2018,1795
+Fairview,2019,1827
+Grandview-Woodland,2003,3140
+Grandview-Woodland,2004,2666
+Grandview-Woodland,2005,2270
+Grandview-Woodland,2006,2031
+Grandview-Woodland,2007,2060
+Grandview-Woodland,2008,1752
+Grandview-Woodland,2009,1482
+Grandview-Woodland,2010,1455
+Grandview-Woodland,2011,1322
+Grandview-Woodland,2012,1319
+Grandview-Woodland,2013,1599
+Grandview-Woodland,2014,1597
+Grandview-Woodland,2015,1649
+Grandview-Woodland,2016,1958
+Grandview-Woodland,2017,1925
+Grandview-Woodland,2018,1761
+Grandview-Woodland,2019,1613
+Hastings-Sunrise,2003,1879
+Hastings-Sunrise,2004,1929
+Hastings-Sunrise,2005,1516
+Hastings-Sunrise,2006,1503
+Hastings-Sunrise,2007,1265
+Hastings-Sunrise,2008,1205
+Hastings-Sunrise,2009,1116
+Hastings-Sunrise,2010,1007
+Hastings-Sunrise,2011,1033
+Hastings-Sunrise,2012,1050
+Hastings-Sunrise,2013,853
+Hastings-Sunrise,2014,938
+Hastings-Sunrise,2015,1102
+Hastings-Sunrise,2016,1169
+Hastings-Sunrise,2017,1208
+Hastings-Sunrise,2018,1270
+Hastings-Sunrise,2019,1229
+Kensington-Cedar Cottage,2003,2230
+Kensington-Cedar Cottage,2004,2560
+Kensington-Cedar Cottage,2005,2179
+Kensington-Cedar Cottage,2006,2094
+Kensington-Cedar Cottage,2007,1714
+Kensington-Cedar Cottage,2008,1610
+Kensington-Cedar Cottage,2009,1481
+Kensington-Cedar Cottage,2010,1498
+Kensington-Cedar Cottage,2011,1302
+Kensington-Cedar Cottage,2012,1285
+Kensington-Cedar Cottage,2013,1568
+Kensington-Cedar Cottage,2014,1663
+Kensington-Cedar Cottage,2015,1535
+Kensington-Cedar Cottage,2016,1574
+Kensington-Cedar Cottage,2017,1371
+Kensington-Cedar Cottage,2018,1391
+Kensington-Cedar Cottage,2019,1363
+Kerrisdale,2003,628
+Kerrisdale,2004,834
+Kerrisdale,2005,826
+Kerrisdale,2006,655
+Kerrisdale,2007,476
+Kerrisdale,2008,349
+Kerrisdale,2009,408
+Kerrisdale,2010,379
+Kerrisdale,2011,429
+Kerrisdale,2012,547
+Kerrisdale,2013,356
+Kerrisdale,2014,407
+Kerrisdale,2015,478
+Kerrisdale,2016,469
+Kerrisdale,2017,430
+Kerrisdale,2018,417
+Kerrisdale,2019,382
+Killarney,2003,959
+Killarney,2004,1160
+Killarney,2005,1125
+Killarney,2006,969
+Killarney,2007,809
+Killarney,2008,574
+Killarney,2009,639
+Killarney,2010,585
+Killarney,2011,529
+Killarney,2012,643
+Killarney,2013,507
+Killarney,2014,594
+Killarney,2015,574
+Killarney,2016,536
+Killarney,2017,572
+Killarney,2018,565
+Killarney,2019,507
+Kitsilano,2003,2948
+Kitsilano,2004,2720
+Kitsilano,2005,2545
+Kitsilano,2006,2365
+Kitsilano,2007,1800
+Kitsilano,2008,1603
+Kitsilano,2009,1626
+Kitsilano,2010,1418
+Kitsilano,2011,1316
+Kitsilano,2012,1427
+Kitsilano,2013,1371
+Kitsilano,2014,1357
+Kitsilano,2015,1633
+Kitsilano,2016,1760
+Kitsilano,2017,1552
+Kitsilano,2018,1802
+Kitsilano,2019,1426
+Marpole,2003,1233
+Marpole,2004,1367
+Marpole,2005,1394
+Marpole,2006,1008
+Marpole,2007,967
+Marpole,2008,828
+Marpole,2009,762
+Marpole,2010,702
+Marpole,2011,617
+Marpole,2012,703
+Marpole,2013,665
+Marpole,2014,807
+Marpole,2015,792
+Marpole,2016,841
+Marpole,2017,852
+Marpole,2018,828
+Marpole,2019,771
+Mount Pleasant,2003,2403
+Mount Pleasant,2004,2682
+Mount Pleasant,2005,2484
+Mount Pleasant,2006,2144
+Mount Pleasant,2007,1932
+Mount Pleasant,2008,2021
+Mount Pleasant,2009,1688
+Mount Pleasant,2010,1568
+Mount Pleasant,2011,1725
+Mount Pleasant,2012,1703
+Mount Pleasant,2013,1801
+Mount Pleasant,2014,2388
+Mount Pleasant,2015,2356
+Mount Pleasant,2016,2563
+Mount Pleasant,2017,2303
+Mount Pleasant,2018,2396
+Mount Pleasant,2019,2219
+Oakridge,2003,657
+Oakridge,2004,728
+Oakridge,2005,701
+Oakridge,2006,617
+Oakridge,2007,443
+Oakridge,2008,433
+Oakridge,2009,484
+Oakridge,2010,551
+Oakridge,2011,527
+Oakridge,2012,552
+Oakridge,2013,469
+Oakridge,2014,516
+Oakridge,2015,546
+Oakridge,2016,544
+Oakridge,2017,521
+Oakridge,2018,499
+Oakridge,2019,491
+Renfrew-Collingwood,2003,2326
+Renfrew-Collingwood,2004,2671
+Renfrew-Collingwood,2005,2359
+Renfrew-Collingwood,2006,2394
+Renfrew-Collingwood,2007,1762
+Renfrew-Collingwood,2008,1706
+Renfrew-Collingwood,2009,1577
+Renfrew-Collingwood,2010,1670
+Renfrew-Collingwood,2011,1488
+Renfrew-Collingwood,2012,1506
+Renfrew-Collingwood,2013,1359
+Renfrew-Collingwood,2014,1655
+Renfrew-Collingwood,2015,1632
+Renfrew-Collingwood,2016,1714
+Renfrew-Collingwood,2017,2013
+Renfrew-Collingwood,2018,1762
+Renfrew-Collingwood,2019,1503
+Riley Park,2003,1136
+Riley Park,2004,1193
+Riley Park,2005,1142
+Riley Park,2006,980
+Riley Park,2007,735
+Riley Park,2008,771
+Riley Park,2009,711
+Riley Park,2010,687
+Riley Park,2011,679
+Riley Park,2012,718
+Riley Park,2013,791
+Riley Park,2014,790
+Riley Park,2015,834
+Riley Park,2016,956
+Riley Park,2017,845
+Riley Park,2018,866
+Riley Park,2019,828
+Shaughnessy,2003,519
+Shaughnessy,2004,546
+Shaughnessy,2005,556
+Shaughnessy,2006,336
+Shaughnessy,2007,334
+Shaughnessy,2008,271
+Shaughnessy,2009,239
+Shaughnessy,2010,257
+Shaughnessy,2011,351
+Shaughnessy,2012,349
+Shaughnessy,2013,275
+Shaughnessy,2014,376
+Shaughnessy,2015,371
+Shaughnessy,2016,417
+Shaughnessy,2017,444
+Shaughnessy,2018,414
+Shaughnessy,2019,266
+South Cambie,2003,528
+South Cambie,2004,469
+South Cambie,2005,452
+South Cambie,2006,348
+South Cambie,2007,285
+South Cambie,2008,266
+South Cambie,2009,324
+South Cambie,2010,294
+South Cambie,2011,274
+South Cambie,2012,299
+South Cambie,2013,273
+South Cambie,2014,435
+South Cambie,2015,414
+South Cambie,2016,374
+South Cambie,2017,349
+South Cambie,2018,292
+South Cambie,2019,367
+Strathcona,2003,1799
+Strathcona,2004,1766
+Strathcona,2005,1670
+Strathcona,2006,1506
+Strathcona,2007,1461
+Strathcona,2008,1377
+Strathcona,2009,1202
+Strathcona,2010,1149
+Strathcona,2011,1104
+Strathcona,2012,1216
+Strathcona,2013,1108
+Strathcona,2014,1443
+Strathcona,2015,1499
+Strathcona,2016,1818
+Strathcona,2017,1774
+Strathcona,2018,1987
+Strathcona,2019,1928
+Sunset,2003,1913
+Sunset,2004,1826
+Sunset,2005,1696
+Sunset,2006,1662
+Sunset,2007,1391
+Sunset,2008,1105
+Sunset,2009,1060
+Sunset,2010,1055
+Sunset,2011,812
+Sunset,2012,981
+Sunset,2013,861
+Sunset,2014,817
+Sunset,2015,826
+Sunset,2016,985
+Sunset,2017,835
+Sunset,2018,967
+Sunset,2019,893
+Victoria-Fraserview,2003,1099
+Victoria-Fraserview,2004,1264
+Victoria-Fraserview,2005,1146
+Victoria-Fraserview,2006,908
+Victoria-Fraserview,2007,673
+Victoria-Fraserview,2008,618
+Victoria-Fraserview,2009,622
+Victoria-Fraserview,2010,603
+Victoria-Fraserview,2011,657
+Victoria-Fraserview,2012,556
+Victoria-Fraserview,2013,549
+Victoria-Fraserview,2014,608
+Victoria-Fraserview,2015,591
+Victoria-Fraserview,2016,601
+Victoria-Fraserview,2017,684
+Victoria-Fraserview,2018,600
+Victoria-Fraserview,2019,530
+West End,2003,4773
+West End,2004,4121
+West End,2005,3307
+West End,2006,3319
+West End,2007,3012
+West End,2008,2996
+West End,2009,2383
+West End,2010,2142
+West End,2011,1935
+West End,2012,1893
+West End,2013,2088
+West End,2014,2415
+West End,2015,2578
+West End,2016,3035
+West End,2017,2830
+West End,2018,3031
+West End,2019,2864
+West Point Grey,2003,551
+West Point Grey,2004,651
+West Point Grey,2005,616
+West Point Grey,2006,458
+West Point Grey,2007,369
+West Point Grey,2008,290
+West Point Grey,2009,364
+West Point Grey,2010,331
+West Point Grey,2011,317
+West Point Grey,2012,311
+West Point Grey,2013,279
+West Point Grey,2014,365
+West Point Grey,2015,363
+West Point Grey,2016,400
+West Point Grey,2017,400
+West Point Grey,2018,372
+West Point Grey,2019,323
