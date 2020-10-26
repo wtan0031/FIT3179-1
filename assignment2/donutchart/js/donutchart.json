@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": "container",
+    "height":"container",
+    "description": "A donut chart showing the part-whole relationship for each type of crime",
+    "title": {"text": "Crime type in Vancouver", "dy": -12},
+    "data": {
+        "values": [
+        {"type": "Break and Enter", "amount": 90396},
+        {"type": "Homicide", "amount": 252},
+        {"type": "Mischief", "amount": 62701},
+        {"type": "Offence Against a Person", "amount": 62078},
+        {"type": "Theft", "amount": 244814},
+        {"type": "Vehicle Collision", "amount": 21512}
+        ]
+    },
+    "mark": {"type": "arc", "innerRadius": 50},
+    "encoding": {
+        "theta": {"field": "amount", "type": "quantitative"},
+        "color": {"field": "type", "type": "nominal"},
+        "tooltip": [
+            {"field": "type", "type": "nominal"},
+            {"field": "amount", "type": "quantitative"}
+        ]
+    },
+    "view": {"stroke": null}
+}
+  
