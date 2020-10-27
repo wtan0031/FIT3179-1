@@ -24,7 +24,7 @@
       "calculate": "(datum.year !== '2003' && datum.year !== 'Total' && datum.amount > 0 ? '+' : '') + datum.amount",
       "as": "text_amount"
     },
-    {"calculate": "(datum.sum + datum.previous_sum) / 2", "as": "center"},
+    {"calculate": "(datum.year !== '2003' && datum.year !== 'Total') ? (datum.sum + datum.previous_sum) / 2 : (16000 + datum.sum) / 2", "as": "center"},
     {
       "calculate": "datum.sum < datum.previous_sum ? datum.sum : ''",
       "as": "sum_dec"
@@ -44,12 +44,13 @@
   },
   "layer": [
     {
-      "mark": {"type": "bar", "size": 45},
+      "mark": {"type": "bar", "size": 45, "clip": true},
       "encoding": {
         "y": {
           "field": "previous_sum",
           "type": "quantitative",
-          "title": "Amount"
+          "title": "Amount",
+          "scale": {"domain": [16000, 38000]}
         },
         "y2": {"field": "sum"},
         "color": {
