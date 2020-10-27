@@ -5,14 +5,7 @@
     "description": "A donut chart showing the part-whole relationship for each type of crime",
     "title": {"text": "Crime type in Vancouver", "dy": -12},
     "data": {
-        "values": [
-        {"type": "Break and Enter", "amount": 90396},
-        {"type": "Homicide", "amount": 252},
-        {"type": "Mischief", "amount": 62701},
-        {"type": "Offence Against a Person", "amount": 62078},
-        {"type": "Theft", "amount": 244814},
-        {"type": "Vehicle Collision", "amount": 21512}
-        ]
+        "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/assignment2/donutchart/data/crime_type_count.csv"
     },
     "mark": {"type": "arc", "innerRadius": 50},
     "encoding": {
