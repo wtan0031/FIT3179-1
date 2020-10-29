@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "title": "The percentage of \"Break And Enter Commercial\" crime in each neighbourhood of Vancouver (2019)",
-    "width": 800,
-    "height": 600,
+    "width": "container",
+    "height": "container",
     "params": [
         {
             "name": "selected_year",

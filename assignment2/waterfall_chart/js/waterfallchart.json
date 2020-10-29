@@ -3,8 +3,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/assignment2/waterfall_chart/data/diff_crime_count_peryear.csv"
   },
-  "width": 800,
-  "height": 450,
+  "width": "container",
+  "height": "container",
   "transform": [
     {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
     {"window": [{"op": "lead", "field": "year", "as": "lead"}]},
