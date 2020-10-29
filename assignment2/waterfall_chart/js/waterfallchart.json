@@ -25,7 +25,7 @@
       "calculate": "(datum.year !== '2003' && datum.year !== 'Total' && datum.amount > 0 ? '+' : '') + datum.amount",
       "as": "text_amount"
     },
-    {"calculate": "(datum.year !== '2003' && datum.year !== 'Total') ? (datum.sum + datum.previous_sum) / 2 : (16000 + datum.sum) / 2", "as": "center"},
+    {"calculate": "(datum.year !== '2003' && datum.year !== 'Total') ? (datum.sum + datum.previous_sum) / 2 : (20000 + datum.sum) / 2", "as": "center"},
     {
       "calculate": "datum.sum < datum.previous_sum ? datum.sum : ''",
       "as": "sum_dec"
@@ -51,7 +51,7 @@
           "field": "previous_sum",
           "type": "quantitative",
           "title": "Amount",
-          "scale": {"domain": [16000, 38000]}
+          "scale": {"domain": [20000, 42000]}
         },
         "y2": {"field": "sum"},
         "color": {
@@ -113,3 +113,4 @@
   ],
   "config": {"text": {"fontWeight": "bold", "color": "#404040"}}
 }
+  
