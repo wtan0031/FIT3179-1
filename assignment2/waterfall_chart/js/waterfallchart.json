@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/assignment2/waterfall_chart/data/diff_crime_count_peryear.csv"
   },
   "width": "container",
-  "height": 300,
+  "height": 400,
   "title": "Number of crimes over years (2003-2019)",
   "transform": [
     {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
