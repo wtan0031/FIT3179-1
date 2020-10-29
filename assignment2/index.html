@@ -21,9 +21,16 @@
         h1{
             font-size: 2.5em;
             font-family: 'Merriweather', serif;
+            color: red;
+        }
+        h2{
+            font-family: 'Merriweather', serif;
         }
         h3{
             font-weight: bold;
+        }
+        p{
+            font-size: 0.9em;
         }
         body{
             background-color: lightgrey;
@@ -57,6 +64,12 @@
             font-size: 0.875em;
             color: 	#666666;
         }
+        .light_green_text{
+            color: #93c4aa;
+        }
+        .peach_text{
+            color: #f78a64;
+        }
     </style>
 </head>
 <body>
@@ -67,17 +80,13 @@
         <!-- Heading -->
         <div class="pure-g">
             <div class="pure-u-1-2">
-                <div class="description-left">
-                    <h1>Crime in Vancouver</h1>
-                </div>
+                <h1>Crime in Vancouver</h1>
             </div>
             <div class="pure-u-1">
-                <div class="description-left">
-                    <div class="sub-heading">
-                        Vancouver is a major city in western Canada, located in the Lower Mainland region of British Columbia. 
-                        Vancouver has the highest population density in Canada, with over 5,400 people per square kilometre, which 
-                        makes it the fifth-most densely populated city with over 250,000 residents in North America.
-                    </div>
+                <div class="sub-heading">
+                    Vancouver is a major city in western Canada, located in the Lower Mainland region of British Columbia. 
+                    Vancouver has the highest population density in Canada, with over 5,400 people per square kilometre, which 
+                    makes it the fifth-most densely populated city with over 250,000 residents in North America.
                 </div>
             </div>
         </div>
@@ -85,12 +94,32 @@
         <!-- pure grid group -->
         <div class="pure-g">
             <div class="pure-u-1">
-                <div style = "padding-left: 20px; padding-right: 20px" id="waterfallChart" class="vis-container"></div>
+                <div id="waterfallChart" class="vis-container"></div>
+            </div>
+            <div class="pure-u-1">
+                <p>
+                    In 2005, a new transit police force, the Greater Vancouver Transportation Authority Police Service (now South Coast British 
+                    Columbia Transportation Authority Police Service), was established with full police powers. In 2006, the police department 
+                    established its own Counter Terrorism Unit.Vancouver operates the Vancouver Police Department, with 1,327 sworn members and 
+                    an operating budget of $316.5 million in 2018. Over 19% of the city's budget was spent on police protection in 2018. 
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+                <h2>Types of Crime</h2>
+                <p>
+                    There are several type of crimes 
+                </p>
+            </div>
+            <div class="pure-u-2-3">
+                <div id="donutchart" class="vis-container"></div>
             </div>
         </div>
 
         <!-- pure grid group -->
-
+        
 
 
     </div> <!-- end page -->
