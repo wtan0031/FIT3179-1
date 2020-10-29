@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "width": "container",
-    "height":"container",
+    "height":300,
     "description": "A donut chart showing the part-whole relationship for each type of crime",
     "title": {"text": "Crime type in Vancouver", "dy": -12},
     "data": {
