@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "description": "the population per state, engineers per state, and hurricanes per state",
-    "title": {"text": "The percentage change of Theft and Break and Enter crimes from 2018 to 2019", "align": "left", "fontSize": 15},
+    "title": {"text": "The percentage change of Theft and Break and Enter crimes from 2018 to 2019", "align": "left", "fontSize": 18},
     "repeat": {"row": ["Theft", "Break and Enter"]},
     "resolve": {
         "scale": {
