@@ -31,7 +31,7 @@
             }
         ],
         "projection": {"type": "equirectangular"},
-        "mark": {"type": "geoshape", "tooltip": true},
+        "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.2},
         "encoding": {
             "shape": {
                 "field": "geo",

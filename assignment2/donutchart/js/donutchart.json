@@ -3,6 +3,11 @@
     "width": "container",
     "height":300,
     "description": "A donut chart showing the part-whole relationship for each type of crime",
+    "selection": {
+      "type": {
+        "type": "multi", "fields": ["type"], "bind": "legend"
+      }
+    },
     "data": {
         "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/assignment2/donutchart/data/crime_type_count.csv"
     },
@@ -13,7 +18,11 @@
         "tooltip": [
             {"field": "type", "type": "nominal"},
             {"field": "amount", "type": "quantitative"}
-        ]
+        ],
+        "opacity": {
+          "condition": {"selection": "type", "value": 1},
+          "value": 0.15
+        }
     },
     "view": {"stroke": null}
 }
