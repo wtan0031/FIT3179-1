@@ -9,7 +9,7 @@
     "mark": {"type": "arc", "innerRadius": 50},
     "encoding": {
         "theta": {"field": "amount", "type": "quantitative"},
-        "color": {"field": "type", "type": "nominal"},
+        "color": {"field": "type", "type": "nominal", "scale": {"scheme": "category10"}},
         "tooltip": [
             {"field": "type", "type": "nominal"},
             {"field": "amount", "type": "quantitative"}

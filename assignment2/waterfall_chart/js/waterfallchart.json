@@ -5,7 +5,7 @@
   },
   "width": "container",
   "height": 400,
-  "title": {"text": "Number of crimes over years (2003-2019)", "fontSize": 22},
+  "title": {"text": "Number of crimes over years (2003-2019)", "fontSize": 20},
   "transform": [
     {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
     {"window": [{"op": "lead", "field": "year", "as": "lead"}]},
@@ -40,7 +40,7 @@
       "field": "year",
       "type": "ordinal",
       "sort": null,
-      "axis": {"labelAngle": 0, "title": "Year"}
+      "axis": {"labelAngle": 0, "title": null}
     }
   },
   "layer": [
@@ -51,7 +51,8 @@
           "field": "previous_sum",
           "type": "quantitative",
           "title": "Amount",
-          "scale": {"domain": [20000, 42000]}
+          "scale": {"domainMin": 20000},
+          "axis": {"grid": false, "title": null, "tickCount": 5}
         },
         "y2": {"field": "sum"},
         "color": {
