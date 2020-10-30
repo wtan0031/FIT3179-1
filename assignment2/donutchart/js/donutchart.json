@@ -16,8 +16,8 @@
         "theta": {"field": "amount", "type": "quantitative"},
         "color": {"field": "type", "type": "nominal", "scale": {"scheme": "category10"}},
         "tooltip": [
-            {"field": "type", "type": "nominal"},
-            {"field": "amount", "type": "quantitative"}
+            {"field": "type", "type": "nominal", "title": "Type"},
+            {"field": "amount", "type": "quantitative", "title": "Amount"}
         ],
         "opacity": {
           "condition": {"selection": "type", "value": 1},

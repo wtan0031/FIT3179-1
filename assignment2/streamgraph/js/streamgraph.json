@@ -2,17 +2,21 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container", "height": 300,
   "data": {"url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/assignment2/streamgraph/data/crime_region_yearmonth.csv"},
+  "title": {"text": "Crime Count Over Years In Each Neighbourhood"},
   "mark": "area",
   "selection": {
     "neighbourhood": {
-      "type": "multi", "fields": ["neighbourhood"], "bind": "legend"
+        "type": "single",
+        "fields": ["neighbourhood"],
+        "on": "mouseover",
+        "bind": "legend"
     }
   },
   "encoding": {
     "x": {
       "title": "year",
       "timeUnit": "yearmonth", "field": "date",
-      "axis": {"domain": false, "format": "%Y", "tickSize": 0}
+      "axis": {"domain": false, "format": "%Y", "tickSize": 0, "title": null}
     },
     "y": {
       "aggregate": "sum", "field": "count",
@@ -26,6 +30,10 @@
     "opacity": {
       "condition": {"selection": "neighbourhood", "value": 1},
       "value": 0.15
-    }
+    },
+    "tooltip": [
+        {"field": "date", "timeUnit": "year", "title": "Year"},
+        {"field": "count", "aggregate": "sum", "type": "quantitative", "title": "Count"}
+    ]
   }
 }
