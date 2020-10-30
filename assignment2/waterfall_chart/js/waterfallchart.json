@@ -5,7 +5,7 @@
   },
   "width": "container",
   "height": 400,
-  "title": "Number of crimes over years (2003-2019)",
+  "title": {"text": "Number of crimes over years (2003-2019)", "fontSize": 20},
   "transform": [
     {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
     {"window": [{"op": "lead", "field": "year", "as": "lead"}]},

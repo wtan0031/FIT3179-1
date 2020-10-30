@@ -3,7 +3,6 @@
     "width": "container",
     "height":300,
     "description": "A donut chart showing the part-whole relationship for each type of crime",
-    "title": {"text": "Crime type in Vancouver", "dy": -12},
     "data": {
         "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/assignment2/donutchart/data/crime_type_count.csv"
     },
