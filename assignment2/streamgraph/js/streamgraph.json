@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container", "height": 300,
   "data": {"url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/assignment2/streamgraph/data/crime_region_yearmonth.csv"},
-  "title": {"text": "null"},
   "mark": "area",
   "selection": {
     "neighbourhood": {
