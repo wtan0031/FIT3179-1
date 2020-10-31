@@ -2,19 +2,27 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "description": "the population per state, engineers per state, and hurricanes per state",
     "title": {"text": "Percentage Change Of \"Theft\" And \"Break and Enter\" Crimes From 2018 To 2019","fontSize": 16},
-    "repeat": {"row": ["Theft", "Break and Enter"]},
+    "repeat": {"row": ["Theft (%)", "Break and Enter (%)"]},
     "resolve": {
         "scale": {
             "color": "independent"
       }
     },
     "spec": {
-        "width": "container",
+        "width": 600,
         "height": 350,
         "data": {
             "url": "https://raw.githubusercontent.com/ChanKahHee/FIT3179/main/assignment2/choropleth/data/theft_and_break_pct_change.csv"
         },
         "transform": [
+            {
+                "calculate": "datum['Theft'] > 25 ? '≥ 25' : datum['Theft'] >= 10 ? '≥ 10' : datum['Theft'] > 0 ? '> 0' : datum['Theft'] === 0 ? '0' : datum['Theft'] < -25 ? '≤ -25' : datum['Theft'] <= -10 ? '≤ -10' : '< 0'",
+                "as": "Theft (%)"
+            },
+            {
+                "calculate": "datum['Break and Enter'] > 25 ? '≥ 25' : datum['Break and Enter'] >= 10 ? '≥ 10' : datum['Break and Enter'] > 0 ? '> 0' : round(datum['Break and Enter'], 0) === 0 ? '0' : datum['Break and Enter'] < -25 ? '≤ -25' : datum['Break and Enter'] <= -10 ? '≤ -10' : '< 0'",
+                "as": "Break and Enter (%)"
+            },
             {
                 "lookup": "Neighbourhood",
                 "from": {
@@ -39,9 +47,9 @@
             },
             "color": {
                 "field": {"repeat": "row"},
-                "type": "quantitative",
-                "scale": {"type": "threshold", "domain": [-25, -10, 0, 10, 25], "scheme": "redyellowgreen", "reverse": true}
-            },
+                "type": "nominal",
+                "scale": {"type": "threshold", "domain": ["≥ 25", "≥ 10", "> 0", "0", "< 0", "≤ -10", "≤ -25"], "scheme": "redyellowgreen"}
+             },
             "tooltip": [
                 {"field": "Neighbourhood", "type": "nominal", "title": "Neighbourhood"},
                 {"field": "Theft", "type": "quantitative", "title": "Theft"},
